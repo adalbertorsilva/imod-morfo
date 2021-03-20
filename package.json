@@ -1,0 +1,36 @@
+{
+  "name": "imod-morfo",
+  "version": "1.0.0",
+  "description": "Lib to help with imod morfometric analisys",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "NODE_ENV=test jest --forceExit --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adalbertorsilva/imod-morfo.git"
+  },
+  "keywords": [
+    "IMOD"
+  ],
+  "author": "Adalberto Turiel Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adalbertorsilva/imod-morfo/issues"
+  },
+  "homepage": "https://github.com/adalbertorsilva/imod-morfo#readme",
+  "bin": {
+    "morfo": "./bin/index.js",
+    "mf": "./bin/index.js"
+  },
+  "dependencies": {
+    "async-exec": "^1.1.0",
+    "inquirer": "^8.0.0",
+    "json2xls": "^0.1.2",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
