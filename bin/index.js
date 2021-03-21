@@ -4,6 +4,7 @@ const fs = require('fs');
 const { default: exec }= require('async-exec');
 const moment = require('moment');
 const json2xls = require('json2xls');
+const emoji = require('node-emoji');
 const { questions } = require('./question-manager');
 const { convertToNumber } = require('./convert-exponencial-to-number');
 
@@ -65,6 +66,8 @@ const createXlsFile = async fileFullPath => {
         .map(createXlsFile);
 
     await Promise.all(filePromises);
+
+    const successMessage = emoji.emojify('-- :tada: PROCESSAMENTO FINALZADO :tada: --');
     
-    console.log('--- PROCESSAMENTO FINALZADO ---');
+    console.log(successMessage);
 })()
