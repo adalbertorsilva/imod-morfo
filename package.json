@@ -1,6 +1,6 @@
 {
   "name": "imod-morfo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lib to help with imod morfometric analisys",
   "main": "bin/index.js",
   "scripts": {
